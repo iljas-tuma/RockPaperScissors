@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RockPaperScissors.Abstract;
+using RockPaperScissors.Concrete;
+using System;
 
 namespace RockPaperScissors
 {
@@ -6,7 +8,12 @@ namespace RockPaperScissors
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IGame game = new Game(); //it is always recommended to create dependency on abstraction (Dependency inversion principle)
+
+            game.Play();
+            game.ShowResults();
+
+            Console.ReadLine();
         }
     }
 }

@@ -6,8 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstract\" />
-    <Folder Include="Concrete\" />
+    <PackageReference Include="ConsoleTables" Version="2.3.0" />
   </ItemGroup>
 
 </Project>
